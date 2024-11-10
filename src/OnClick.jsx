@@ -5,7 +5,7 @@ import { useState } from 'react'
 
 import React from 'react'
 
-const MyComponent = () => {
+const OnClick = () => {
     const [name,setName]=useState('Null')//working with strings
     const [age,setAge]=useState(0)//working with numbers
 
@@ -35,4 +35,4 @@ const MyComponent = () => {
   )
 }
 
-export default MyComponent
+export default OnClick
