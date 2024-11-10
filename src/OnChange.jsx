@@ -8,7 +8,7 @@ const OnChange = () => {
     const [quantity, setQuantity] = useState()// for number input
     const [textArea, setTextArea] = useState('')//  for text area input
     const [select,setSelect]=useState('')//for selecting options
-    const [radioButton, setRadioButton]=useState('')
+    const [radioButton, setRadioButton]=useState('')//for checking radio buttons
 
     function displayName(e){
         setName(e.target.value)
@@ -31,13 +31,13 @@ const OnChange = () => {
     <div>
         <input type="text" onChange={displayName} value={name} />
         <p>Name: {name}</p>
-
+{/* *************************************************** */}
         <input type="number" value={quantity} onChange={quantityChange} />
         <p>qunatity change: {quantity}</p>
-
-         <textArea value={textArea} onChange={textContent} placeholder='enter delivery instructions......' />
+{/* ************************************* */}
+         <textarea value={textArea} onChange={textContent} placeholder='enter delivery instructions......' />
          <p>{textArea}</p>
-
+{/* ************************************************* */}
          <select value={select} onChange={selectArea} >
               <option value="">Select an option</option>
               <option value="visa">Visa</option>
@@ -45,11 +45,21 @@ const OnChange = () => {
               <option value="giftcard">Giftcard</option>
         </select>
         <p>Payment: {select}</p>
-
-        <label htmlFor="">
+{/* *************************************************** */}
+        <label>
           pick up
-          <input type="radio" value='action' checked={radioButton === 'action'} />
+          <input type="radio" value='pick up'
+                                      checked={radioButton === 'pick up'} 
+                                      onChange={Radio}/>
         </label>
+<br />
+        <label>
+         delivery
+          <input type="radio" value='delivery'
+                                      checked={radioButton === 'delivery'} 
+                                      onChange={Radio}/>
+        </label>
+        <p>Shipping: {radioButton} </p>
     </div>
   )
 }

@@ -1,7 +1,8 @@
 
 
 import React from 'react'
-import OnChange from './Onchange'
+// import OnChange from './Onchange'
+import ColorPicker from './ColorPicker'
 // import OnClick from './OnClick'
 
 // import Button from './Button'
@@ -13,7 +14,8 @@ const App = () => {
       {/* <Button/> */}
       {/* <Button2/> */}
       {/* <OnClick/> */}
-      <OnChange/>
+      {/* <OnChange/> */}
+      <ColorPicker/>
     </div>
   )
 }
