@@ -1,10 +1,11 @@
 
 
 import React from 'react'
+import UsingUpdaterFunction from './UsingUpdaterFunction'
 // import OnChange from './Onchange'
-import ColorPicker from './ColorPicker'
+// import ColorPicker from './ColorPicker'
+// import Updater from './Updater'
 // import OnClick from './OnClick'
-
 // import Button from './Button'
 // import Button2 from './Button2'
 
@@ -15,7 +16,9 @@ const App = () => {
       {/* <Button2/> */}
       {/* <OnClick/> */}
       {/* <OnChange/> */}
-      <ColorPicker/>
+      {/* <ColorPicker/> */}
+      {/* <Updater/> */}
+      <UsingUpdaterFunction/>
     </div>
   )
 }
