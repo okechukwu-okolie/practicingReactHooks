@@ -1,7 +1,9 @@
 
 
 import React from 'react'
-import UsingUpdaterFunction from './UsingUpdaterFunction'
+// import UsingUpdaterFunctionToUpdateArray from './UsingUpdaterFunctionToUpdateArray'
+import UsingUpdaterInArrayOfObjects from './UsingUpdaterInArrayOfObjects'
+// import UsingUpdaterFunctionToUpdateObject from './UsingUpdaterFunctionToUpdateObject'
 // import OnChange from './Onchange'
 // import ColorPicker from './ColorPicker'
 // import Updater from './Updater'
@@ -18,7 +20,9 @@ const App = () => {
       {/* <OnChange/> */}
       {/* <ColorPicker/> */}
       {/* <Updater/> */}
-      <UsingUpdaterFunction/>
+      {/* <UsingUpdaterFunctionToUpdateObject/> */}
+      {/* <UsingUpdaterFunctionToUpdateArray/> */}
+      <UsingUpdaterInArrayOfObjects/>
     </div>
   )
 }

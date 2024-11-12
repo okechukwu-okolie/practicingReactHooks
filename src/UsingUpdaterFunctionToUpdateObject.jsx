@@ -1,21 +1,21 @@
-
+//UPDATING THE STATE OF AN OBJECT USING REACT
 
 import { useState } from "react"
 
-const UsingUpdaterFunction = ()=>{
+const UsingUpdaterFunctionToUpdateObject = ()=>{
       const [car,setCar] = useState({year: 2024,
                                     make: "Toyota",
                                     model: "Camry"  
       })
 
       function handleYearChange(e){
-        setCar(c=>({...c,year:e.target.value}))
+        setCar(car=>({...car,year:e.target.value}))
       }
       function handleMakeChange(e){
-        setCar(c=>({...c,make:e.target.value}))
+        setCar(car=>({...car,make:e.target.value}))
       }
       function handleModelChange(e){
-        setCar(c=>({...c,model:e.target.value}))
+        setCar(car=>({...car,model:e.target.value}))
       }
 
     return( <div>
@@ -27,4 +27,4 @@ const UsingUpdaterFunction = ()=>{
         <input type="text" value={car.model} onChange={handleModelChange}/><br />
     </div>)
 }
-export default UsingUpdaterFunction
+export default UsingUpdaterFunctionToUpdateObject
